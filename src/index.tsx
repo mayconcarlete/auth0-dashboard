@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Auth0Provider } from "@auth0/auth0-react"
-import LoginButton from './login/Login';
-import Logout from './logout';
+import NavBar from "./components/nav-bar"
 
 ReactDOM.render(
   <Auth0Provider
-    redirectUri='http://localhost:3001'
-  >
-    <LoginButton />
-    <Logout/>
+  domain='dev-hqo639s8.us.auth0.com'
+  clientId='N3eKriQAcNiWVAwAPRheaUXPISTqkCBr'
+  redirectUri='http://localhost:3001'
+>
+    <NavBar />
     <App />
 
   </Auth0Provider>,
