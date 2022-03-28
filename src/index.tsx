@@ -8,8 +8,6 @@ import NavBar from "./components/nav-bar"
 
 ReactDOM.render(
   <Auth0Provider
-  domain='dev-hqo639s8.us.auth0.com'
-  clientId='N3eKriQAcNiWVAwAPRheaUXPISTqkCBr'
   redirectUri='http://localhost:3001'
 >
     <NavBar />
