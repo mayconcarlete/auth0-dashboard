@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useAuth0 } from "@auth0/auth0-react"
 
 function App() {
+  const { user, isAuthenticated, isLoading} = useAuth0()
   return (
     <div className="App">
       <header className="App-header">
@@ -16,8 +18,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Maycon and React
         </a>
+        <button onClick={() => console.log(user, isAuthenticated, isLoading)}> clique para ver os dados</button>
       </header>
     </div>
   );

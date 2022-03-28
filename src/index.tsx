@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Auth0Provider } from "@auth0/auth0-react"
+import LoginButton from './login/Login';
+import Logout from './logout';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Auth0Provider
+    redirectUri='http://localhost:3001'
+  >
+    <LoginButton />
+    <Logout/>
     <App />
-  </React.StrictMode>,
+
+  </Auth0Provider>,
   document.getElementById('root')
 );
 
