@@ -7,13 +7,7 @@ import { Auth0Provider } from "@auth0/auth0-react"
 import NavBar from "./components/nav-bar"
 
 ReactDOM.render(
-  <Auth0Provider
-  redirectUri='http://localhost:3001'
->
-    <NavBar />
-    <App />
-
-  </Auth0Provider>,
+  <App />,
   document.getElementById('root')
 );
 
