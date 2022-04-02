@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import { useAuth0 } from "@auth0/auth0-react"
 import { BrowserRouter as Router, Routes, Route, Link,  } from "react-router-dom"
 import Home from './pages/Home';
@@ -21,6 +20,7 @@ function App() {
     domain="dev-hqo639s8.us.auth0.com"
     clientId=""
     redirectUri='http://localhost:3001/'
+    organization='org_rIDEc47EBDuCLkCQ'
   >
     <Test />
 
