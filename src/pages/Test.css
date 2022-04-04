@@ -1,0 +1,24 @@
+.Nav{
+    background-color: #232147;
+    display: flex;
+    flex-direction: row;
+}
+
+.NavDiv {
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.NavDiv:first-child{
+    margin-left: 5vw;
+}
+
+.Link{
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}

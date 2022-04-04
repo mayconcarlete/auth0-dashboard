@@ -1,3 +1,4 @@
+import "./Test.css"
 import React, { useEffect } from "react"
 import { Link, Route, Routes } from "react-router-dom"
 import NavBar from "../components/nav-bar"
@@ -13,11 +14,13 @@ import LogoutButton from "../components/nav-bar/logout"
 
 const Test = () => {
   return <>
-          <nav>
-        <Link to="/">Home</Link>
-        <Link to="/user">User</Link>
-        <Link to="/profile">Appeals</Link>
-        <LogoutButton />
+        <nav className="Nav">
+          <div className="NavDiv">
+          <Link to="/" className="Link">Home</Link>
+          <Link to="/user" className="Link">User</Link>
+          <Link to="/profile" className="Link">Appeals</Link>
+          <LogoutButton />
+          </div>
       </nav>
 
     {/* <LoginButton /> */}
