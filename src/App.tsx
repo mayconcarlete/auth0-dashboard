@@ -17,10 +17,10 @@ function App() {
   return (
     <Router>
      <Auth0Provider
-    domain="dev-hqo639s8.us.auth0.com"
-    clientId=""
-    redirectUri='http://localhost:3001/'
-    organization='org_rIDEc47EBDuCLkCQ'
+        domain="dev-hqo639s8.us.auth0.com"
+        clientId=""
+        redirectUri='http://localhost:3001/'
+        organization='org_rIDEc47EBDuCLkCQ'
   >
     <Test />
 

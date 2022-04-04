@@ -8,8 +8,8 @@ interface AuxProps {
 }
 const PrivateRoute  = ({children}: any) => {
   const state = useSelector(( state:RootStateOrAny ) => state)
-
-  return  state.user.user.isLogged === true ? children : <Navigate to="/login" />
+  
+  return  state.user.user ? children : <Navigate to="/login" />
 }
 
 
