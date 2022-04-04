@@ -18,7 +18,6 @@ const Test = () => {
         <Link to="/user">User</Link>
         <Link to="/profile">Appeals</Link>
         <LogoutButton />
-       <LoginButton />
       </nav>
 
     {/* <LoginButton /> */}

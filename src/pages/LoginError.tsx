@@ -6,10 +6,11 @@ import { changeUser, selectUser } from '../redux/userSlice';
 import { Navigate } from "react-router-dom";
 
 const LoginError = () => {
-  const { loginWithPopup , isAuthenticated, user, getAccessTokenSilently } = useAuth0()
+  const { loginWithPopup , isAuthenticated, user, getAccessTokenSilently, isLoading } = useAuth0()
   const userReduxData = useSelector(selectUser)
   const dispatch = useDispatch()
   useEffect(() => {
+    console.log(isLoading, isAuthenticated)
     getAccessTokenSilently()
         .then(auth0Token => {
               dispatch(changeUser({
@@ -19,7 +20,7 @@ const LoginError = () => {
               auth0Token
             }))
           })
-  },[isAuthenticated])
+  },[isAuthenticated, isLoading])
   const handleLogin = () => {
     loginWithPopup()
   }
